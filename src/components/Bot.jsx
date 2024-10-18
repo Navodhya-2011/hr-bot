@@ -4,7 +4,7 @@ import { auth, db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
 import Footer from './Footer';
 import logo from '../assets/logo-dfccbank.png';
-import BotImg from '../assets/3664521-removebg.png';
+import BotImg from '../assets/hr_text1-removebg.png';
 import bgImg from '../assets/background.png';
 import BgImg1 from '../assets/tp244-bg1-02.jpg'
 
