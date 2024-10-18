@@ -90,8 +90,8 @@ function Bot() {
         <p>Loading...</p>
       )}
        <div className='container' style={{textAlign:"left"}}>
-      <h1 style={{fontSize:"40px",fontWeight:"bold", paddingTop:"20px", paddingBottom:"20px" }}>Welcome to DFCC Compliance Bot</h1>
-      <p className='p1'>Interact with the bot in the bottom-right corner.</p>
+      <h1 style={{fontSize:"40px",fontWeight:"bold", paddingTop:"20px", paddingBottom:"20px" }}>Welcome to DFCC HR Bot</h1>
+      <p className='p1'>Ask your HR related queries here.</p>
      </div>
 
         <div className="bot-image">
@@ -101,14 +101,15 @@ function Bot() {
         <div className='bot-align'>
         <df-messenger
           project-id="noted-casing-438604-a8"
-          agent-id="048f3d21-94d6-4002-9d92-9f444d362f31"
+          agent-id="1ede874e-3cce-4577-8718-2ae0ed9bca66"
           language-code="en"
           max-query-length="-1"
           allow-feedback="all">
           <df-messenger-chat
-          chat-title="DFCC Compliance Support">
+          chat-title="Ask HR">
           </df-messenger-chat>
         </df-messenger>
+
 
         </div>
           <div className="profile-buttons">
