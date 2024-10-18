@@ -1,0 +1,122 @@
+body {
+  font-family: 'Google Sans', sans-serif;
+  background-image: url('../assets/tp244-bg1-02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+.bot-image {
+  max-width: 45%;
+  min-height: 5%;
+}
+
+.p1 {
+  font-size: 1.5em;
+  color: #721414; /* Lighter yellow */
+  text-shadow: 2px 0px black;
+  margin-left: 100px;
+}
+/* Dialogflow Messenger styling */
+df-messenger {
+  z-index: 999;
+  position: fixed;
+  --df-messenger-font-color: #000;
+  --df-messenger-font-family: Google Sans;
+  --df-messenger-chat-background: #f3f6fc;
+  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-bot-background: #fff;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 350px;
+  text-align: left;
+}
+
+
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+  body {
+      background-size: cover; /* Keep cover for smaller devices */
+      background-attachment: fixed; /* Fix the background for a smoother scrolling effect */
+      height: auto;
+  }
+
+  .logo-image img {
+      max-width: 150px; /* Reduce logo size for smaller screens */
+  }
+
+  .bot-image {
+      max-width: 80%; /* Allow the bot image to take more space on mobile */
+      margin: 0 auto;
+      display: block;
+  }
+
+  df-messenger {
+      bottom: 20px; /* Move the chatbot bubble up for smaller screens */
+      right: 10px;
+  }
+
+  h1 {
+      font-size: 28px; /* Reduce heading font size for smaller screens */
+  }
+
+  .profile-card h1 {
+      font-size: 24px; /* Reduce font size in the profile card */
+  }
+
+  .container h1 {
+      font-size: 32px;
+      padding: 15px;
+  }
+
+  .container p {
+      font-size: 16px;
+  }
+
+  .profile-buttons .button {
+      font-size: 14px; /* Adjust button font size */
+      padding: 10px 20px; /* Smaller padding for buttons on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      background-size: contain; /* Use contain for very small screens to prevent cropping */
+      background-position: top center; /* Adjust position to center on mobile */
+      height: auto;
+  }
+
+  .logo-image img {
+      max-width: 120px; /* Further reduce logo size for very small screens */
+  }
+
+  .container h1 {
+      font-size: 24px; /* Smaller heading for extra small screens */
+  }
+
+  df-messenger {
+      bottom: 10px; /* Move chatbot bubble further up */
+      right: 5px;
+  }
+
+  .profile-buttons .button {
+      font-size: 12px;
+      padding: 8px 16px;
+  }
+}
